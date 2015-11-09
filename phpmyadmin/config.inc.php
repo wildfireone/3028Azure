@@ -32,7 +32,7 @@ $cfg['Servers'][$i]['host'] = 'eu-cdbr-azure-north-d.cloudapp.net';
 $cfg['Servers'][$i]['connect_type'] = 'tcp';
 $cfg['Servers'][$i]['compress'] = false;
 $cfg['Servers'][$i]['AllowNoPassword'] = false;
-
+$cfg['PmaAbsoluteUri'] = 'http://jpi7434.azurewebsites.net/phpmyadmin/';
 /**
  * phpMyAdmin configuration storage settings.
  */
