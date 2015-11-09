@@ -5,6 +5,15 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8SJLz15Qknte-YYZTZLJ_IL9UHDvTNhg"
             type="text/javascript"></script>
     <script type="text/javascript">
+        var customIcons = {
+            restaurant: {
+                icon: 'http://labs.google.com/ridefinder/images/mm_20_blue.png'
+            },
+            bar: {
+                icon: 'http://labs.google.com/ridefinder/images/mm_20_red.png'
+            }
+        };
+
         function load() {
             var map = new google.maps.Map(document.getElementById("map"), {
                 center: new google.maps.LatLng(47.6145, -122.3418),
@@ -18,9 +27,11 @@
                     var point = new google.maps.LatLng(
                             parseFloat(markers[i].getAttribute("lat")),
                             parseFloat(markers[i].getAttribute("lng")));
+                    var icon = customIcons[type] || {};
                     var marker = new google.maps.Marker({
                         map: map,
-                        position: point
+                        position: point,
+                        icon: icon.icon
                     });
                 }
             });
