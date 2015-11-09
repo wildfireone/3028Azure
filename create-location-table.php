@@ -13,13 +13,13 @@ if ($conn->connect_error) {
 }
 
 // sql to create table
-$sql = "CREATE TABLE 'testmarkers' (
-'id' INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
-'name' VARCHAR( 60 ) NOT NULL ,
-'address' VARCHAR( 60 ) NOT NULL ,
-'lat' FLOAT( 10, 6 ) NOT NULL ,
-'lng' FLOAT( 10, 6 ) NOT NULL ,
-'type' VARCHAR( 30 ) NOT NULL
+$sql = "CREATE TABLE testmarkers (
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+name VARCHAR( 60 ) NOT NULL ,
+address VARCHAR( 60 ) NOT NULL ,
+lat FLOAT( 10, 6 ) NOT NULL ,
+lng FLOAT( 10, 6 ) NOT NULL ,
+type VARCHAR( 30 ) NOT NULL
 ) ENGINE = MYISAM ;
 )";
 
