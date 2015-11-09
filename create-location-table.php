@@ -1,12 +1,12 @@
 <?php
-$db = new mysqli(
+$conn = new mysqli(
     "eu-cdbr-azure-north-d.cloudapp.net",
     "b99256e599d9fc",
     "64c23a04",
     "rgutest" );
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+//$conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
