@@ -21,7 +21,7 @@ lat FLOAT( 10, 6 ) NOT NULL ,
 lng FLOAT( 10, 6 ) NOT NULL ,
 type VARCHAR( 30 ) NOT NULL
 ) ENGINE = MYISAM ;
-)";
+";
 
 if ($conn->query($sql) === TRUE) {
     echo "Table markers created successfully";
