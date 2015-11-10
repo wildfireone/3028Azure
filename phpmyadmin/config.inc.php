@@ -26,7 +26,7 @@ $i = 0;
  */
 $i++;
 /* Authentication type */
-$cfg['Servers'][$i]['auth_type'] = 'http';
+$cfg['Servers'][$i]['auth_type'] = 'cookie';
 /* Server parameters */
 $cfg['Servers'][$i]['host'] = 'eu-cdbr-azure-north-d.cloudapp.net';
 $cfg['Servers'][$i]['connect_type'] = 'tcp';
