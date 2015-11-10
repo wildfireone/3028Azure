@@ -33,7 +33,7 @@ var ErrorReport = {
             //if (data.report_setting == "ask") {
               //  ErrorReport._showErrorNotification();
             //} else
-            if (data.report_setting == "always") {
+            /*if (data.report_setting == "always") {
                 report_data = ErrorReport._get_report_data(exception);
                 post_data = $.extend(report_data, {
                     send_error_report: true,
@@ -47,7 +47,7 @@ var ErrorReport = {
                         PMA_ajaxShowMessage(data.message, false);
                     }
                 });
-            }
+            }*/
         });
     },
     /**
