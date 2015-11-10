@@ -166,7 +166,6 @@ var ErrorReport = {
      * @return String
      */
     _extractExceptionName: function (exception) {
-        console.log(exception.message);
         if (exception.message === null || typeof(exception.message) == "undefined"){
             return "";
         } else {
